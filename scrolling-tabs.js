@@ -834,7 +834,7 @@
         link: function(scope, element, attrs) {
           var scrollingTabsControl = new ScrollingTabsControl(element, $timeout),
               isWrappingAngularUIBTabset = element.find('uib-tabset').length > 0,
-              isWrappingAngularUITabset = isWrappingAngularUIBTabset || element.find('tabset, .scrtabs-tabs-movable-container .ng-isolate-scope > ul.nav').length > 0,
+              isWrappingAngularUITabset = isWrappingAngularUIBTabset || element.find('tabset, .scrtabs-tabs-movable-container ul.nav').length > 0,
               scrollToTabEdge = attrs.scrollToTabEdge && attrs.scrollToTabEdge.toLowerCase() === 'true',
               scrtc = {
                 hasTabContentOutsideMovableContainer: true
